@@ -1,0 +1,173 @@
+/* #loginform,#registerform,#postjob,#viewjob,#user-profile,#cbitss-logo,#edit-pro{
+    animation: canimate cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s 1;
+} */
+#vermsgbox{
+    transition: .5s;
+}
+
+#loginform, #registerform, #validation, #viewjob, #user-profile, #cbitss-logo, #edit-pro {
+    animation: canimate linear .7s 1;
+}
+
+#wrapper, #fixcbtn {
+    animation: wrap linear .5s 1;
+}
+input[type="password"]{
+    padding-right: 2.5rem !important;
+}
+#togvisi{
+    position: absolute;
+    right: 15px;
+    top:30%;
+}
+@keyframes canimate {
+    0% {
+        opacity: 0;
+        transform: scale(.3) translateY(100%);
+    }
+    50% {
+        opacity: .5;
+        transform: scale(.6) translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0%);
+    }
+}
+
+@keyframes wrap {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer a.btn {
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    transform: translateX(42%);
+}
+
+footer a.homebtn {
+    transform: translateX(60%);
+    bottom: 12%;
+    padding: 10px 15px;
+}
+
+footer a.homebtn i {
+    font-size: 1.2rem;
+}
+
+footer a.btn:hover {
+    transform: translateX(0%);
+}
+
+/*  */
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.form-control::file-selector-button {
+    padding: .8em .75rem;
+    margin: -.8rem -.75rem;
+    -webkit-margin-end: .75rem;
+    margin-inline-end: .75rem;
+    color: #212529;
+    background-color: #e9ecef;
+    pointer-events: none;
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    border-inline-end-width: 1px;
+    border-radius: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.input-group>.form-control, .input-group>.form-select {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.form-control[type="file"] {
+    overflow: hidden;
+}
+
+input.form-control {
+    font-size: 1.2rem;
+    color: #6b6f80;
+}
+input[type="file"].custom-select{
+    font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16.8px;
+    font-weight: 400;
+}
+#validation input[type="text"].form-control, #validation input[type="email"].form-control, #validation input[type="tel"].form-control, #validation input[type="password"].form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fafafa;
+    background-clip: padding-box;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0rem;
+    transition: .15s ease-in-out;
+}
+
+#validation input[type="text"].form-control::placeholder, #validation input[type="password"].form-control::placeholder, #validation input[type="email"].form-control::placeholder, #validation input[type="tel"].form-control::placeholder {
+    color: #777;
+}
+
+#validation input[type="text"].form-control:focus, #validation input[type="password"].form-control:focus, #validation input[type="email"].form-control:focus, #validation input[type="tel"].form-control:focus {
+    border-bottom: 3px solid #ced4da;
+}
+
+#validation input[aria-invalid="false"].form-control {
+    background-color: #f7f7f7;
+    border-bottom: 3px solid #ced4da;
+}
+
+#validation input[aria-invalid="true"].form-control {
+    background-color: #fff;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control i {
+    position: absolute;
+    bottom: 0;
+}
